@@ -24,3 +24,6 @@ for file in $files
 do
   echo $file
 done
+
+# get all running processes and save them to txt file. Save only names.
+ps -ef | awk '{print $8}' > processes.txt
